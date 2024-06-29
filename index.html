@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Stworka тестовое задание | Главная страница</title>
+</head>
+
+<body>
+    <h1 class="sr-only">Тестовое задание для компании Stworka</h1>
+    <section class="demo">
+        <div class="container">
+            <h2 class="sr-only"> Демонстрация компонента todo-reminder</h2>
+
+            <!-- для label, subtitle и button использую два класса, так как предполагаю, что этих элементов на странице много, поэтому они делаются блоком согласно методологии БЭМ и на этот класс записаны общие стили -->
+            <article class="demo__todo-reminder todo-reminder">
+                <div class="todo-reminder__progress progress">
+                    <svg width="60" height="60" viewBox="0 0 61 61" fill="none" aria-label="Прогресс по задачам">
+                        <circle cx="30.5" cy="30.5" r="29.5" stroke="white" stroke-opacity="0.5" stroke-width="1" />
+                        <!-- Длину окружности прогресса меняем через значение переменной progress в атрибуте style -->
+                        <circle class="progress__line" cx="30.5" cy="30.5" r="29" fill="none" stroke="white" stroke-width="2" style="--todo-progress: 3;" stroke-linecap="round" />
+                        <text class="progress__text" x="30.5" y="33" text-anchor="middle" dy="5">0/7</text>
+                    </svg>
+                </div>
+
+                <div class="todo-reminder__content">
+                    <span class="todo-reminder__label label">Чеклист</span>
+                    <h3 class="subtitle">
+                        Выполнено: 0 из 7 действий
+                    </h3>
+                    <p class="todo-reminder__text">
+                                Следующее действие: Созвониться с клиентом до 
+                                <time datetime="2024-05-23T12:00"> 23.05.24 12:00</time>
+                            </p>
+                </div>
+                <!-- Предплагаю, что по клику будет открываться какое-то модальное окно с чеклистом, поэтому сделала кнопкой. Если будет переход на другую страницу, то нужно сделать ссылкой -->
+                <button class="todo-reminder__button button" type="button">
+                    Открыть чеклист
+                </button>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

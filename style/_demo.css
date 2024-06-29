@@ -1,0 +1,16 @@
+.demo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.demo__todo-reminder {
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.demo__todo-reminder {
+		max-width: 743px;
+	}
+}

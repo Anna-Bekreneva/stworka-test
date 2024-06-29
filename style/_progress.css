@@ -1,0 +1,13 @@
+.progress__line {
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	transition: stroke-dashoffset 0.35s;
+	stroke-dasharray: 182.2;
+	stroke-dashoffset: calc(182.2 - (182.2 * var(--todo-progress) / 100));
+}
+
+.progress__text {
+	font-size: 20px;
+	line-height: 1.3;
+	fill: var(--color-white);
+}

@@ -1,0 +1,61 @@
+.todo-reminder {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 12px 18px 15px 22px;
+	background-color: var(--color-blue-500);
+	border-radius: 10px;
+}
+
+.todo-reminder__progress,
+.todo-reminder__content {
+	margin-right: 16px;
+}
+
+.todo-reminder__progress {
+	width: 60px;
+}
+
+.todo-reminder__content {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.todo-reminder__label {
+	align-self: flex-start;
+}
+
+.todo-reminder__button {
+	margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+	.todo-reminder {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 16px;
+	}
+
+	.todo-reminder__progress {
+		display: none;
+	}
+
+	.todo-reminder__content {
+		margin-right: 0;
+	}
+
+	.todo-reminder__button {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.todo-reminder {
+		padding: 12px;
+	}
+
+	.todo-reminder__button {
+		width: 100%;
+	}
+}

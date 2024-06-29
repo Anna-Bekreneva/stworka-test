@@ -1,0 +1,9 @@
+:root {
+	--color-white: #ffffff;
+	--color-dark: #000000;
+	--color-blue-700: #2364db;
+	--color-blue-500: #3579f5;
+	--color-blue-400: #4777ed;
+	--color-light-100: #f4f8ff;
+	--todo-progress: 0;
+}
