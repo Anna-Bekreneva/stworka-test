@@ -1,7 +1,7 @@
-@import url('./_fonts.css');
-@import url('./_vars.css');
-@import url('./_reset.css');
-@import url('./_global.css');
-@import url('./_progress.css');
-@import url('./_demo.css');
-@import url('./_todo-reminder.css');
+@import '_fonts.css';
+@import '_vars.css';
+@import '_reset.css';
+@import '_global.css';
+@import '_progress.css';
+@import '_demo.css';
+@import '_todo-reminder.css';
